@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+p{
+    margin: 0;
+}
+main{
+    width: 18em;
+    height: auto;
+    border-radius: 0.5em;
+    overflow: hidden;
+    background-color: hsl(216, 50%, 16%);
+}
+#header{
+    margin: 1rem;
+    margin-top: 0;
+    font-weight: 600;
+    font-size: 25px;
+}
+#description{
+    margin: 1rem;
+    color: hsl(215, 32%, 27%);
+}
+#pricedate{
+    display: flex;
+    margin: 1rem;
+    justify-content: space-between;
+}
+#price{
+    color: hsl(178, 100%, 50%);
+}
+#date{
+    color: hsl(215, 32%, 27%);
+}
+#line{
+    width: 16em;
+    height: 0.1em;
+    background-color: hsl(215, 32%, 27%);
+    margin: 1em;
+}
+#creator{
+    display: flex;
+    margin: 1em;
+}
+img[alt="Profile"]{
+    border-radius: 50%;
+    border: 1px solid white;
+    height: 2em;
+    width: auto;
+}
+#creator > p{
+    margin-left: 0.5em;
+    align-self: center;
+    color: hsl(215, 32%, 27%);
+}
+a:hover{
+    color: hsl(178, 100%, 50%);
+}
+#imgcontainer{
+    display: block;
+    position: relative;
+    width: 16em;
+    height: 16em;
+    margin: 1em;
+    border-radius: 0.5em;
+    overflow: hidden;
+}
+img[alt="Equilibrium"]{
+    height: 16em;
+    width: auto;
+}
+#overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: hsl(178, 100%, 50%);
+    opacity: 0;
+}
+.view{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+#imgcontainer:hover #overlay{
+    opacity: 0.5;
+}
+#imgcontainer:hover .view{
+    opacity: 1;
+}
