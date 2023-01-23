@@ -102,3 +102,6 @@ img[alt="Equilibrium"]{
 #imgcontainer:hover .view{
     opacity: 1;
 }
+.attribution{
+    color: hsl(215, 32%, 27%);
+}
